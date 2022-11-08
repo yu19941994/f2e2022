@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+    box-sizing: content-box;
+}
+
+img {
+    display: block;
+}
+
+a {
+    cursor: pointer;
+}

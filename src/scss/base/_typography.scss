@@ -1,0 +1,11 @@
+h1 {
+    font-family: 'Jockey One';
+    font-size: 46px;
+    line-height: 64px;
+    color: $dark;
+
+    @include phone() {
+        font-size: 32px;
+        line-height: 45px;
+    }
+}

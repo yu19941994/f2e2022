@@ -1,0 +1,144 @@
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: $light;
+
+    @include smallphone() {
+        padding: 16px;
+    }
+
+    &--input {
+        display: none;
+    }
+
+    &__button {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 20px;
+        height: 12px;
+
+        > span {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: block;
+            width: 20px;
+            height: 2px;
+            // margin-bottom: 3px;
+            background-color: #000;
+        }
+
+        > span:nth-child(1) {
+            top: 0px;
+            transform: rotate(0deg);
+            transition: top 1s 1s, transform 1s;
+        }
+        
+        > span:nth-child(2) {
+            top: 0;
+            bottom: 0;
+            transition: 1s;
+            opacity: 1;
+            transform: 1s 2s;
+        }
+        
+        > span:nth-child(3) {
+            bottom: 0px;
+            transform: rotate(0deg);
+            transition: bottom 1s 1s, transform 1s;
+        }
+
+
+        @include padOnly() {
+            display: none;
+        }
+    }
+
+    &__main {
+        @include phone() {
+            position: absolute;
+            // right: 0px;
+            left: 0px;
+            top: 100%;
+            background-color: $light;
+            width: 100%;
+            display: none;
+        }
+
+        @include padOnly() {
+            display: flex;
+        }
+
+        > a {
+            font-family: 'Noto Sans TC';
+            font-size: 24px;
+            line-height: 35px;
+            color: $dark;
+            text-decoration: none;
+            @include phone() {
+                display: block;
+                padding: 10px 20px;
+                // border-bottom: 1px solid red;
+                margin: 0 10px;
+            }
+            @include padOnly() {
+                padding: 0px 20px;
+            }
+        }
+
+        > a:hover {
+            @include phone() {
+                background-color: $dark;
+                color: $light;
+            }
+            @include padOnly() {
+                background-color: $third;
+            }
+        }
+
+        > a:active {
+            @include phone() {
+                background-color: $dark;
+                color: $light;
+            }
+            @include padOnly() {
+                background-color: $third;
+            }
+        }
+    }
+}
+
+#menu-control:checked~header .navbar__button {
+    > span:nth-child(1) {
+        top: 5px;
+        transform: rotate(-45deg);
+        /*轉兩圈 405(360+45)*/
+        /* 先上下，再旋轉 */
+        transition: top 0.5s 0.5s, transform 0.5s 1s;
+    }
+
+    > span:nth-child(2) {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    >span:nth-child(3) {
+        bottom: 5px;
+        transform: rotate(-135deg);
+        /*轉兩圈 675(360+315)*/
+        /* 先上下，再旋轉 */
+        transition: bottom 0.5s 0.5s, transform 0.5s 1s;
+    }
+}
+
+#menu-control:checked~header .navbar__main {
+    display: block;
+}
+
