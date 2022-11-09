@@ -1,0 +1,153 @@
+.banner {
+    background-color: $light;
+    overflow: hidden;
+
+    &__main {
+        position: relative;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 16px;
+        padding: 23px 27px 22px 30px;
+        border-radius: 32px 32px 0px 0px;
+        background-color: $dark;
+
+        @include pad() {
+            margin: 0px 32px;
+            padding-top: 40px;
+            padding-bottom: 78px;
+        }
+
+        @include pc() {
+            margin: 0px 80px;
+            padding-top: 20px;
+            padding-bottom: 129px;
+        }
+
+        > img {
+            width: 54px;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // width: 81.632653%;
+        width: 280px;
+
+        > h2:nth-of-type(1) {
+            margin-right: auto;
+            margin-bottom: 5px;
+        }
+
+        > h2:nth-of-type(2) {
+            margin-left: auto;
+            margin-bottom: 16px;
+        }
+
+        > img {
+            width: 100%;
+            margin-bottom: 6px;
+        }
+    }
+
+    &__title {
+        margin: 0px 4px;
+        color: $primary;
+    }
+
+    &__img--text {
+        position: absolute;
+
+        > p {
+            font-family: 'Jockey One';
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 45px;
+            text-align: right;
+            color: $dark;
+        }
+    }
+
+    &__longtext--top {
+        margin-bottom: 24px;
+
+        > div {
+            display: flex;
+        }
+        > p,
+        > div > p {
+            // position: absolute;
+            display: inline-block;
+            padding: 8px 24px;
+            font-family: 'Jockey One';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 34px;
+            background-color: $third;
+            overflow: hidden;
+        }
+
+        >div > p {
+            margin-left: -100px;
+        }
+
+        > p {
+            margin-left: -146px;
+        }
+    }
+
+    &__longtext--bottom {
+        margin-bottom: 24px;
+        // overflow: hidden;
+
+        > div {
+            display: flex;
+        }
+
+        > p,
+        > div > p {
+            // position: absolute;
+            display: inline-block;
+            padding: 8px 24px;
+            font-family: 'Jockey One';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 34px;
+            background-color: $third;
+            overflow: hidden;
+        }
+
+        > div > p {
+            margin-right: -100px;
+        }
+
+        > p {
+            margin-right: -146px;
+        }
+    }
+
+    &__box--right {
+        // position: absolute;
+        // right: 27px;
+        // display: inline;
+        width: 36px;
+        height: 36px;
+        margin-left: auto;
+        // margin-right: 27px;
+        // margin-bottom: 88px;
+        background-color: $third;
+    }
+
+    &__box--left {
+        width: 36px;
+        height: 36px;
+        margin-right: auto;
+        // margin-right: 27px;
+        // margin-bottom: 80px;
+        background-color: $third;
+    }
+}
