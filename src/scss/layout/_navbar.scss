@@ -1,13 +1,21 @@
 .navbar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    width: calc(100% - 36px);
+    padding: 16px;
     background-color: $light;
 
     @include smallphone() {
-        padding: 16px;
+        width: calc(100% - 52px);
+        padding: 16px 32px;
+    }
+
+    @include padOnly() {
+        width: calc(100% - 32px);
     }
 
     &--input {
@@ -78,6 +86,7 @@
 
         > a {
             font-family: 'Noto Sans TC';
+            font-weight: 500;
             font-size: 24px;
             line-height: 35px;
             color: $dark;
@@ -140,5 +149,7 @@
 
 #menu-control:checked~header .navbar__main {
     display: block;
+    /* 暫時 */
+    z-index: 1000;
 }
 

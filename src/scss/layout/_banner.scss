@@ -1,6 +1,11 @@
 .banner {
+    margin-top: 77px;
     background-color: $light;
     overflow: hidden;
+
+    @include padOnly() {
+        margin-top: 96px;
+    }
 
     &__main {
         position: relative;
@@ -13,7 +18,12 @@
         border-radius: 32px 32px 0px 0px;
         background-color: $dark;
 
-        @include pad() {
+        // @include smallphone() {
+        //     padding-left: 0px;
+        //     padding-right: 0px;
+        // }
+
+        @include padOnly() {
             margin: 0px 32px;
             padding-top: 40px;
             padding-bottom: 78px;
@@ -27,7 +37,55 @@
 
         > img {
             width: 54px;
+
+            @include smallphone() {
+                width: 14.602374vw;
+                margin-top: -3.911343vw;
+            }
         }
+    }
+
+    &__img--top {
+        display: none;
+        // margin-bottom: 273px;
+        @include smallphone() {
+            display: flex;
+            width: 100%;
+        }
+
+        > div:nth-of-type(1) {
+            position: relative;
+            width: 42.242503%;
+            margin-left: -80px;
+            padding-bottom: 38.200782%;
+
+            > img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+
+        > div:nth-of-type(2) {
+            position: relative;
+            width: 40.547599%;
+            margin-top: 48px;
+            margin-left: auto;
+            padding-bottom: 19.295958%;
+
+            > img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+
     }
 
     &__img {
@@ -38,19 +96,58 @@
         // width: 81.632653%;
         width: 280px;
 
+        @include smallphone() {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 100%;
+            transform: translate(-28%, -62%);
+        }
+
         > h2:nth-of-type(1) {
             margin-right: auto;
             margin-bottom: 5px;
+            @include smallphone() {
+                display: none;
+            }
         }
 
         > h2:nth-of-type(2) {
             margin-left: auto;
             margin-bottom: 16px;
+            @include smallphone() {
+                margin-left: 28.683181vw;
+            }
         }
 
         > img {
             width: 100%;
             margin-bottom: 6px;
+            @include smallphone() {
+                display: none;
+            }
+        }
+    }
+
+    &__img--pad {
+        display: none;
+        @include smallphone() {
+            // position: absolute;
+            position: relative;
+            display: block;
+            width: 53.976532%;
+            padding-bottom: 48.239896%;
+            margin-bottom: 20px;
+        }
+
+        > img {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
         }
     }
 
@@ -69,6 +166,9 @@
             line-height: 45px;
             text-align: right;
             color: $dark;
+        }
+        @include smallphone() {
+            display: none;
         }
     }
 
@@ -98,11 +198,41 @@
         > p {
             margin-left: -146px;
         }
+
+        @include smallphone() {
+            display: none;
+        }
     }
 
-    &__longtext--bottom {
-        margin-bottom: 24px;
-        // overflow: hidden;
+    &__img--textPad {
+        position: absolute;
+        top: 50%;
+        // bottom: 0px;
+        left: 50%;
+        // right: 0px;
+        display: none;
+        width: 100%;
+        padding-right: 11.734029vw;
+        text-align: right;
+        transform: translate(-50%, -50%);
+        @include smallphone() {
+            display: block;
+            > p {
+                font-family: 'Jockey One';
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 64px;
+                color: $dark;
+            }
+        }
+    }
+
+    &__longtext--pad {
+        display: none;
+
+        @include smallphone() {
+            margin-left: -80.83442vw;
+        }
 
         > div {
             display: flex;
@@ -119,6 +249,76 @@
             line-height: 34px;
             background-color: $third;
             overflow: hidden;
+
+            @include smallphone() {
+                font-size: 3.129074vw;
+                line-height: 4.374185vw;
+            }
+        }
+
+        > div > p {
+            margin-left: -100px;
+        }
+
+        > p {
+            margin-left: -146px;
+        }
+
+        @include smallphone() {
+            display: block;
+        }
+    }
+
+    &__img--bottom {
+        position: relative;
+        display: none;
+        width: 31.290743vw;
+        margin-top: -14.341591vw;
+        padding-bottom: 14.993481%;
+
+        @include smallphone() {
+            display: block;
+        }
+
+        > img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    &__longtext--bottom {
+        margin-bottom: 24px;
+
+        @include smallphone() {
+            margin-right: -74.315515vw;
+            margin-top: -9.126467vw;
+        }
+
+        > div {
+            display: flex;
+        }
+
+        > p,
+        > div > p {
+            // position: absolute;
+            display: inline-block;
+            padding: 8px 24px;
+            font-family: 'Jockey One';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 34px;
+            background-color: $third;
+            overflow: hidden;
+
+            @include smallphone() {
+                margin-bottom: 0;
+                font-size: 3.129074vw;
+                line-height: 4.374185vw;
+            }
         }
 
         > div > p {
@@ -131,23 +331,53 @@
     }
 
     &__box--right {
-        // position: absolute;
-        // right: 27px;
-        // display: inline;
         width: 36px;
         height: 36px;
         margin-left: auto;
-        // margin-right: 27px;
-        // margin-bottom: 88px;
         background-color: $third;
+
+        @include smallphone() {
+            width: 4.6936vw;
+            height: 4.6936vw;
+        }
     }
 
     &__box--left {
         width: 36px;
         height: 36px;
         margin-right: auto;
-        // margin-right: 27px;
-        // margin-bottom: 80px;
         background-color: $third;
+
+        @include smallphone() {
+            width: 4.6936vw;
+            height: 4.6936vw;
+        }
+    }
+
+    &__area--greenY {
+        display: none;
+        // width: 6.518905vw;
+        width: 22.8161617vw;
+        height: 35.59322vw;
+        margin-left: calc(-100% - 150px);
+        // margin-left: -10px;
+        background-color: $third;
+        @include smallphone() {
+            display: block;
+        }
+    }
+
+    &__area--greenX {
+        display: none;
+        // width: 6.518905vw;
+        width: 39.113529vw;
+        height: 6.518905vw;
+        margin-left: calc(-120%);
+        // margin-left: -10px;
+        background-color: $third;
+
+        @include smallphone() {
+            display: block;
+        }
     }
 }

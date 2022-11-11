@@ -1,5 +1,5 @@
 @mixin smallphone {
-    @media (max-width: 375px) {
+    @media (min-width: 376px) {
         @content;
     }
 }
@@ -17,13 +17,13 @@
 }
 
 @mixin pad {
-    @media (max-width: 992px) {
+    @media (min-width: 992px) {
         @content;
     }
 }
 
 @mixin pc {
-    @media (max-width: 1440px) {
+    @media (min-width: 1440px) {
         @content;
     }
 }

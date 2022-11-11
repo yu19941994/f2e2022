@@ -1,4 +1,9 @@
 import '../css/index.css';
 import '../scss/all.scss';
 import '../index.html';
-import "@babel/polyfill"
+import "@babel/polyfill";
+import '../images/pink_dialogue.png';
+import '../images/triangle.png';
+import '../images/blue_dialogue.png';
+import '../images/green_dialogue.png';
+import '../images/blue_dialogue_l.png';

@@ -1,5 +1,6 @@
 h1 {
     font-family: 'Jockey One';
+    font-weight: 400;
     font-size: 46px;
     line-height: 64px;
     color: $dark;
@@ -7,5 +8,30 @@ h1 {
     @include phone() {
         font-size: 32px;
         line-height: 45px;
+    }
+}
+
+h2 {
+    font-family: 'Jockey One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $secondary;
+    @include smallphone() {
+        font-size: 4.693611vw;
+        line-height: 5.47588vw;
+    }
+}
+
+h3 {
+    font-family: 'Jockey One';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 84px;
+    color: $dark;
+
+    @include smallphone() {
+        font-size: 15.645372vw;
+        line-height: 21.90352vw;
     }
 }
