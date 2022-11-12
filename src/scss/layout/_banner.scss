@@ -43,6 +43,16 @@
                 margin-top: -3.911343vw;
             }
         }
+
+        > img:nth-of-type(1) {
+            display: none;
+            position: absolute;
+            top: 40%;
+            left: 0px;
+            @include smallphone() {
+                display: block;
+            }
+        }
     }
 
     &__img--top {
@@ -102,7 +112,7 @@
             left: 50%;
             display: block;
             width: 100%;
-            transform: translate(-28%, -62%);
+            transform: translate(-28%, -68%);
         }
 
         > h2:nth-of-type(1) {
@@ -295,7 +305,7 @@
 
         @include smallphone() {
             margin-right: -74.315515vw;
-            margin-top: -9.126467vw;
+            // margin-top: -9.126467vw;
         }
 
         > div {
@@ -351,6 +361,20 @@
         @include smallphone() {
             width: 4.6936vw;
             height: 4.6936vw;
+        }
+    }
+
+    &__box--light {
+        display: none;
+        width: 61.277705vw;
+        height: 6.518905vw;
+        // margin-top: -9.126467vw;
+        margin-top: -15.645372vw;
+        // margin-bottom: 20vw;
+        margin-right: -117.340287vw;
+        background-color: $light;
+        @include smallphone() {
+            display: block;
         }
     }
 
