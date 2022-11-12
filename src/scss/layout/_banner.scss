@@ -98,6 +98,25 @@
 
     }
 
+    &__img--textBlue {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        width: 100%;
+        font-family: 'Jockey One';
+        font-weight: 400;
+        font-size: 5.997392vw;
+        line-height: 8.344198vw;
+        color: $dark;
+        transform: translate(-28%, -50%);
+
+        @include smallphone() {
+            display: block;
+        }
+    }
+
     &__img {
         display: flex;
         justify-content: center;
