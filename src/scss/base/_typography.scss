@@ -46,3 +46,63 @@ h3 {
         line-height: 168px;
     }
 }
+
+h4 {
+    width: 100%;
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $primary;
+    text-align: center;
+
+    @include smallphone() {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    @include padOnly() {
+        font-size: 46px;
+        line-height: 67px;
+    }
+
+    &::before {
+        content: "<h1>";
+        margin-right: 12px;
+        font-family: 'Jockey One';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $secondary;
+
+        @include smallphone() {
+            font-size: 32px;
+            line-height: 45px;
+        }
+    
+        @include padOnly() {
+            font-size: 46px;
+            line-height: 64px;
+        }
+    }
+
+    &::after {
+        content: "<h1>";
+        margin-left: 12px;
+        font-family: 'Jockey One';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $secondary;
+
+        @include smallphone() {
+            font-size: 32px;
+            line-height: 45px;
+        }
+    
+        @include padOnly() {
+            font-size: 46px;
+            line-height: 64px;
+        }
+    }
+}

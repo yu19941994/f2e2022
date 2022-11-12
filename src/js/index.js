@@ -7,3 +7,4 @@ import '../images/triangle.png';
 import '../images/blue_dialogue.png';
 import '../images/green_dialogue.png';
 import '../images/blue_dialogue_l.png';
+import '../images/icons_twins.png';

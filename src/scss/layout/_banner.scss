@@ -143,7 +143,7 @@
         font-size: 5.997392vw;
         line-height: 8.344198vw;
         color: $dark;
-        transform: translate(-25%, -50%);
+        transform: translate(-28%, -50%);
 
         @include smallphone() {
             display: block;
@@ -245,6 +245,7 @@
 
     &__title {
         margin: 0px 4px;
+        font-family: 'cubic 11';
         color: $primary;
 
 
