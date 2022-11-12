@@ -1,0 +1,172 @@
+.level {
+    padding: 12px 16px 178px;
+    background-color: $dark;
+    @include smallphone() {
+        padding: 114px 35px 168px;
+    }
+    @include padOnly() {
+        padding: 124px 80px 168px;
+    }
+
+    > ul > li {
+        margin-bottom: 24px;
+        @include midphone() {
+            margin-bottom: 32px;
+        }
+    }
+
+    ul > li > img {
+        width: calc(100% + 4px);
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+
+    ul > li > img:nth-of-type(1) {
+        @include smallphone() {
+            display: none;
+        }
+    }
+
+    ul > li > img:nth-of-type(2) {
+        display: none;
+        @include smallphone() {
+            display: block;
+        }
+        @include pad() {
+            display: none;
+        }
+    }
+
+    ul > li > img:nth-of-type(3) {
+        display: none;
+        @include pad() {
+            display: block;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 32px 44px;
+        background-color: $light;
+        @include midphone() {
+            padding: 68px 32px;
+        }
+        @include pad() {
+            flex-direction: row;
+            padding: 130px 148px;
+        }
+        > img {
+            max-width: 200px;
+            margin-bottom: 48px;
+
+            @include midphone() {
+                max-width: 26.075619vw;
+                margin-bottom: 10.430248vw;
+            }
+
+            @include pad() {
+                max-width: 13.888889vw;
+                margin-right: 8.333333vw;
+                margin-bottom: 0px;
+            }
+
+            @include pc() {
+                max-width: 200px;
+                margin-right: 120px;
+            }
+        }
+    }
+
+    &__text {
+        width: 100%;
+        > p {
+            font-family: 'Jockey One';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $primary;
+
+            @include midphone() {
+                font-size: 4.172099vw;
+                line-height: 5.867014vw;
+            }
+
+            @include pad() {
+                font-size: 3.333333vw;
+                line-height: 4.652778vw;
+            }
+
+            @include pc() {
+                font-size: 48px;
+                line-height: 67px;
+            }
+    
+            > span {
+                color: $secondary;
+            }
+        }
+
+        > h6 {
+            margin-bottom: 18px;
+            font-family: 'Noto Sans TC';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 35px;
+            color: $dark;
+            letter-spacing: 0.64px;
+            @include midphone() {
+                font-size: 7.301173vw;
+                line-height: 10.560626vw;
+            }
+            @include pad() {
+                font-size: 3.888889vw;
+                line-height: 5.625vw;
+            }
+            @include pc() {
+                font-size: 56px;
+                line-height: 81px;
+            }
+        }
+    }
+
+    &__subject {
+        display: flex;
+        > div {
+            flex-grow: 1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 2px solid #000;
+            border-radius: 2px;
+            font-family: 'Cubic 11';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000;
+            text-align: center;
+                @include midphone() {
+                    flex-grow: 0;
+                    padding: 18.5px 24px;
+                    font-size: 3.129074vw;
+                    line-height: 3.650587vw;
+                }
+                @include pad() {
+                    font-size: 1.944444vw;
+                    line-height: 2.291667vw;
+                }
+                @include pc() {
+                    font-size: 20px;
+                    line-height: 33px;
+                }
+                > span {
+                    margin-right: 4px;
+                    color: $third;
+                }
+        }
+        > div:nth-of-type(1) {
+            margin-right: 8px;
+        }
+    }
+
+}
