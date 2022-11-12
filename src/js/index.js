@@ -8,3 +8,4 @@ import '../images/blue_dialogue.png';
 import '../images/green_dialogue.png';
 import '../images/blue_dialogue_l.png';
 import '../images/icons_twins.png';
+import '../images/pink_dialogue_l.png';
