@@ -25,8 +25,7 @@
 
         @include padOnly() {
             margin: 0px 32px;
-            padding-top: 40px;
-            padding-bottom: 78px;
+            padding: 40px 0px 78px 0px;
         }
 
         @include pc() {
@@ -42,15 +41,24 @@
                 width: 14.602374vw;
                 margin-top: -3.911343vw;
             }
+
+            @include padOnly() {
+                width: 113px;
+                margin-top: -40px;
+            }
         }
 
         > img:nth-of-type(1) {
             display: none;
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 0px;
             @include smallphone() {
                 display: block;
+            }
+            @include padOnly() {
+                top: 40%;
+                left: 20%;
             }
         }
     }
@@ -69,6 +77,12 @@
             margin-left: -80px;
             padding-bottom: 38.200782%;
 
+            @include padOnly() {
+                width: 324px;
+                margin-left: 8.055556vw;
+                padding-bottom: 0px;
+            }
+
             > img {
                 position: absolute;
                 top: 0;
@@ -76,7 +90,14 @@
                 left: 0;
                 right: 0;
                 width: 100%;
+
+                @include padOnly() {
+                    position: relative;
+                    width: 324px;
+                    height: 293px;
+                }
             }
+
         }
 
         > div:nth-of-type(2) {
@@ -86,6 +107,13 @@
             margin-left: auto;
             padding-bottom: 19.295958%;
 
+            @include padOnly() {
+                width: 311px;
+                margin-top: 6.111111vw;
+                margin-right: 12.5vw;
+                padding-bottom: 0px;
+            }
+
             > img {
                 position: absolute;
                 top: 0;
@@ -93,6 +121,11 @@
                 left: 0;
                 right: 0;
                 width: 100%;
+
+                @include padOnly() {
+                    width: 311px;
+                    height: 148px;
+                }
             }
         }
 
@@ -110,10 +143,16 @@
         font-size: 5.997392vw;
         line-height: 8.344198vw;
         color: $dark;
-        transform: translate(-28%, -50%);
+        transform: translate(-25%, -50%);
 
         @include smallphone() {
             display: block;
+        }
+
+        @include padOnly() {
+            font-size: 46px;
+            line-height: 64px;
+            transform: translate(-40%, -50%);
         }
     }
 
@@ -131,7 +170,13 @@
             left: 50%;
             display: block;
             width: 100%;
-            transform: translate(-28%, -68%);
+            transform: translate(-28%, -64%);
+        }
+
+        @include padOnly() {
+            width: 414px;
+            height: 370px;
+            transform: translate(-40%, -90%);
         }
 
         > h2:nth-of-type(1) {
@@ -147,6 +192,18 @@
             margin-bottom: 16px;
             @include smallphone() {
                 margin-left: 28.683181vw;
+            }
+
+            @include padOnly() {
+                width: 800px;
+                margin-left: 100px;
+                margin-bottom: 0;
+                margin-top: 300px;
+            }
+
+            @include pc() {
+                margin-top: 220px;
+                margin-left: -20px;
             }
         }
 
@@ -170,6 +227,12 @@
             margin-bottom: 20px;
         }
 
+        @include padOnly() {
+            width: 380.83px;
+            height: 55.55px;
+            padding-bottom: 0;
+        }
+
         > img {
             position: absolute;
             top: 0px;
@@ -183,6 +246,11 @@
     &__title {
         margin: 0px 4px;
         color: $primary;
+
+
+        @include pc() {
+            margin-left: 400px;
+        }
     }
 
     &__img--text {
@@ -220,7 +288,7 @@
             overflow: hidden;
         }
 
-        >div > p {
+        > div > p {
             margin-left: -100px;
         }
 
@@ -244,14 +312,28 @@
         padding-right: 11.734029vw;
         text-align: right;
         transform: translate(-50%, -50%);
+
         @include smallphone() {
             display: block;
+
             > p {
                 font-family: 'Jockey One';
                 font-weight: 400;
+                font-size: 5.215124vw;
+                line-height: 8.344198vw;
+                color: $dark;
+            }
+        }
+
+        @include padOnly() {
+            // top: 70%;
+            // left: 62%;
+            top: 80%;
+            left: -10%;
+            transform: translate(0%, 0%);
+            > p {
                 font-size: 40px;
                 line-height: 64px;
-                color: $dark;
             }
         }
     }
@@ -283,10 +365,14 @@
                 font-size: 3.129074vw;
                 line-height: 4.374185vw;
             }
+
         }
 
         > div > p {
             margin-left: -100px;
+            @include padOnly() {
+                margin-left: -55px;
+            }
         }
 
         > p {
@@ -309,6 +395,12 @@
             display: block;
         }
 
+        @include padOnly() {
+            width: 311px;
+            margin-top: calc(-14.341591vw + 30.11px);
+            padding-bottom: 0px;
+        }
+
         > img {
             position: absolute;
             top: 0;
@@ -316,6 +408,10 @@
             left: 0;
             right: 0;
             width: 100%;
+            @include padOnly() {
+                width: 311px;
+                height: 148px;
+            }
         }
     }
 
@@ -352,6 +448,9 @@
 
         > div > p {
             margin-right: -100px;
+            @include padOnly() {
+                margin-right: -55px;
+            }
         }
 
         > p {
@@ -395,6 +494,9 @@
         @include smallphone() {
             display: block;
         }
+        @include padOnly() {
+            margin-top: 0px;
+        }
     }
 
     &__area--greenY {
@@ -407,6 +509,13 @@
         background-color: $third;
         @include smallphone() {
             display: block;
+        }
+        @include padOnly() {
+            width: 175px;
+            height: 407px;
+            margin-top: -240px;
+            margin-right: auto;
+            margin-left: 46px;
         }
     }
 
@@ -421,6 +530,13 @@
 
         @include smallphone() {
             display: block;
+        }
+
+        @include padOnly() {
+            width: 361px;
+            height: 100px;
+            margin-right: auto;
+            margin-left: -7.888889vw;
         }
     }
 }

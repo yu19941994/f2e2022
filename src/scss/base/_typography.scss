@@ -17,9 +17,15 @@ h2 {
     font-size: 18px;
     line-height: 25px;
     color: $secondary;
+
     @include smallphone() {
         font-size: 4.693611vw;
         line-height: 5.47588vw;
+    }
+
+    @include padOnly() {
+        font-size: 36px;
+        line-height: 42px;
     }
 }
 
@@ -33,5 +39,10 @@ h3 {
     @include smallphone() {
         font-size: 15.645372vw;
         line-height: 21.90352vw;
+    }
+
+    @include padOnly() {
+        font-size: 120px;
+        line-height: 168px;
     }
 }
