@@ -4,6 +4,12 @@
     }
 }
 
+@mixin midphone {
+    @media (min-width: 585px) {
+        @content;
+    }
+}
+
 @mixin phone {
     @media (max-width: 767px) {
         @content;

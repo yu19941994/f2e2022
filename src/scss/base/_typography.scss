@@ -106,3 +106,30 @@ h4 {
         }
     }
 }
+
+h5 {
+    font-family: 'Cubic 11';
+    font-weight: 400;
+    font-size: 15.466667vw;
+    line-height: 26.666667vw;
+    color: $dark;
+
+    @include smallphone() {
+        font-size: 58px;
+        line-height: 100px;
+    }
+
+    > span {
+        display: block;
+        @include midphone() {
+            display: inline;
+        }
+        @include padOnly() {
+            display: block;
+        }
+        @include pad() {
+            display: inline;
+        }
+
+    }
+}

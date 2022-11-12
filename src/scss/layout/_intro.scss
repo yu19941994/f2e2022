@@ -11,13 +11,13 @@
     }
 
     &__main {
-        padding: 80px 8px;
+        padding: 80px 8px 172px;
         background-color: $dark;
         @include smallphone() {
-            padding: 160px 18px;
+            padding: 160px 18px 190px;
         }
         @include padOnly() {
-            padding: 200px 55px;
+            padding: 200px 55px 349px;
         }
 
         > h4 {
@@ -73,7 +73,7 @@
         text-align: center;
         background-color: $third;
 
-        @include padOnly() {
+        @include pc() {
             padding: 16px;
             text-align: left;
         }

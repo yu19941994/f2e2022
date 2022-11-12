@@ -1,0 +1,185 @@
+.cta {
+    position: relative;
+    background-color: $light;
+
+    @include midphone() {
+        padding: 128px 32px 225px;
+    }
+
+    @include padOnly() {
+        padding-top: 163px;
+        padding-left: 13.888889vw;
+        padding-right: 13.888889vw;
+    }
+
+    @include pc() {
+        padding: 54px 200px 150px;
+    }
+
+    &__text {
+        // padding: 0px 10px;
+        // border: 1px solid $dark;
+        > p {
+            padding: 0px 10px;
+            border: 1px solid $dark;
+            font-family: 'Jockey One';
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 45px;
+            color: $dark;
+            white-space: nowrap;
+            word-wrap: break-word;
+            overflow: hidden;
+
+            @include smallphone() {
+                font-size: 48px;
+                line-height: 67px;
+            }
+
+            @include padOnly() {
+                font-size: 60px;
+                line-height: 84px;
+            }
+        }
+    }
+
+    > div:nth-of-type(1) {
+        @include smallphone() {
+            position: relative;
+        }
+    }
+    
+    > div:nth-of-type(2) {
+        @include midphone() {
+            position: relative;
+            // width: 86px;
+            height: 57.496741vw;
+            margin-top: 90px;
+        }
+
+        @include padOnly() {
+            top: 16px;
+            left: 0;
+            height: 32.569444vw;
+        }
+
+        > p {
+            @include midphone() {
+                position: absolute;
+                bottom: 0;
+                width: 57.4967471vw;
+                transform: rotate(-90deg);
+                transform-origin: left top;
+
+            }
+
+            @include padOnly() {
+                width: 32.569444vw;
+            }
+        }
+    }
+
+    > div:nth-of-type(4) {
+        @include midphone() {
+            position: relative;
+            // width: 86px;
+            height: 57.496741vw;
+            margin-top: calc(-57.496741vw - 69px);
+        }
+
+        @include padOnly() {
+            bottom: 0;
+            right: 16px;
+            height: 32.569444vw;
+            margin-top: calc(-32.569444vw - 69px);
+        }
+
+        > p {
+            @include midphone() {
+                position: absolute;
+                right: 70px;
+                bottom: 0;
+                width: 57.4967471vw;
+                transform: rotate(90deg);
+                transform-origin: right bottom;
+
+            }
+
+            @include padOnly() {
+                width: 32.569444vw;
+            }
+        }
+    }
+
+    > div:nth-of-type(5) {
+        @include smallphone() {
+            // margin-top: calc(-57.496741vw - 69px);
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 40px 58px;
+
+        @include midphone() {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+        }
+
+        @include pad() {
+            transform: translate(-50%, -75%);
+        }
+
+        > div:nth-of-type(1),
+        > div:nth-of-type(2),
+        > div:nth-of-type(3) {
+            width: 33.333333%;
+            height: 62.933333vw;
+
+            @include smallphone() {
+                display: inline;
+                width: 86.33px;
+                // height: 236px;
+                height: 236px;
+            }
+
+            @include midphone() {
+                width: 151.33px;
+                height: 136px;
+            }
+
+            @include padOnly() {
+                width: 86.33px;
+                height: 236px;
+            }
+
+            @include pad() {
+                width: 151.33px;
+                height: 136px;
+            }
+        }
+
+        &--pink {
+            background-color: $secondary;
+        }
+
+        &--green {
+            background-color: $third;
+        }
+
+        &--blue {
+            background-color: $primary;
+        }
+
+        &--text {
+            position: absolute;
+            font-family: 'Noto Sans TC';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
