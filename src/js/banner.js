@@ -19,10 +19,8 @@ const optionsBanner = {
 };
 
 const bannerDetect = new IntersectionObserver(bannerDetectHandler, optionsBanner);
-// const bannerReDetect = new IntersectionObserver(bannerReDetectHandler, optionsBanner);
 
 bannerDetect.observe(intro);
-// bannerReDetect.observe(intro);
 
 function bannerDetectHandler (entries) {
     entries.forEach(function(each, index) {
@@ -61,13 +59,3 @@ function bannerDetectHandler (entries) {
         }
     })
 }
-
-// function bannerReDetectHandler (entries) {
-//     entries.forEach(function(each, index) {
-//         if (each.isIntersecting) {
-//             window.addEventListener('wheel', (e) => {
-//                 console.log(e.deltaY)
-//             })
-//         }
-//     })
-// }

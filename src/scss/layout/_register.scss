@@ -90,9 +90,7 @@
             color: rgba(255, 255, 255, .5);
             letter-spacing: 0.64px;
             @include midphone() {
-                // font-size: 18px;
                 font-size: 2.346808vw;
-                // line-height: 26px;
                 line-height: 3.389831vw;
             }
 
@@ -144,9 +142,7 @@
             color: $dark;
             letter-spacing: 0.64px;
             @include midphone() {
-                // font-size: 32px;
                 font-size: 4.172099vw;
-                // line-height: 37px;
                 line-height: 4.82399vw;
             }
             @include pad() {
@@ -187,9 +183,7 @@
             @include midphone() {
                 display: flex;
                 align-items: center;
-                // font-size: 18px;
                 font-size: 2.346806vw;
-                // line-height: 26px;
                 line-height: 3.389831vw;
             }
 
@@ -212,9 +206,7 @@
                 background-color: $third;
 
                 @include midphone() {
-                    // width: 16px;
                     width: 2.08605vw;
-                    // height: 16px;
                     height: 2.08605vw;
                 }
             }

@@ -12,14 +12,6 @@ const navbarButton = document.querySelectorAll('.navbar__button > span');
 const navbarMain = document.querySelector('.navbar__main');
 const registerButton = document.getElementById('registerBtn');
 
-// banner
-// const bannerGreen = document.querySelector('.banner__area--greenX');
-// const bannerTextPad = document.querySelector('.banner__longtext--pad');
-// const bannerTextTop = document.querySelector('.banner__longtext--top');
-// const bannerTextBottom = document.querySelector('.banner__longtext--bottom');
-// const introMain = document.querySelector('.intro__main > h4');
-
-
 const options = {
     root: null,
     rootMargin: '0px',
@@ -37,8 +29,6 @@ const navbarLight = new IntersectionObserver(changeNavbarLight, options);
 const navbarLightRegister = new IntersectionObserver(changeNavbarLight, optionsRegister);
 const registerBtnShow = new IntersectionObserver(btnShow, optionsRegister);
 const registerBtnNotShow = new IntersectionObserver(btnNotShow, optionsRegister);
-// const bannerDetect = new IntersectionObserver(bannerDetectHandler, optionsBannerLeave);
-// const bannerReDetect = new IntersectionObserver(bannerReDetectHandler, optionsBanner);
 
 navbarDark.observe(intro);
 registerBtnNotShow.observe(intro);
@@ -54,10 +44,6 @@ navbarLightRegister.observe(register);
 registerBtnNotShow.observe(register);
 navbarLight.observe(rule);
 registerBtnShow.observe(rule);
-
-// banner
-// bannerDetect.observe(introMain);
-// bannerReDetect.observe(introMain);
 
 function changeNavbarDark (entries) {
     entries.forEach(function(each, index) {
@@ -127,24 +113,3 @@ function btnShow (entries) {
         }
     })
 }
-
-// banner
-// function bannerDetectHandler (entries) {
-//     entries.forEach(function(each, index) {
-//         if (each.isIntersecting) {
-//             bannerGreen.style.animationName = "leave";
-//             bannerTextPad.style.animationName = "leave";
-//             bannerTextTop.style.animationName = "leave";
-//         }
-//     })
-// }
-
-// function bannerReDetectHandler (entries) {
-//     entries.forEach(function(each, index) {
-//         if (each.isIntersecting) {
-//             bannerGreen.style.animationName = "back";
-//             bannerTextPad.style.animationName = "back";
-//             bannerTextTop.style.animationName = "back";
-//         }
-//     })
-// }
