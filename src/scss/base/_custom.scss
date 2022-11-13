@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+a {
+    cursor: pointer;
+}
+
+// body {
+//     overflow-x: hidden;
+// }

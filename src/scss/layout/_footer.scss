@@ -1,0 +1,42 @@
+.footer {
+    padding-top: 48px;
+    padding-bottom: 174px;
+    background-color: $dark;
+    > h6 {
+        margin-bottom: 16px;
+        font-family: 'Noto Sans TC';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 0.64px;
+
+        @include midphone() {
+            font-size: 4.172099vw;
+            line-height: 5.997392vw;
+        }
+
+        @include pad() {
+            font-size: 32px;
+            line-height: 46px;
+        }
+    }
+    &__logo {
+        display: flex;
+        justify-content: center;
+        > li {
+            padding: 9px;
+            border-radius: 12px;
+            background-color: #fff;
+
+            @include midphone() {
+                border-radius: 32px;
+            }
+        }
+        > li:not(:nth-of-type(3)) {
+            margin-right: 31.5px;
+        }
+    }
+
+}

@@ -1,0 +1,150 @@
+h1 {
+    font-family: 'Jockey One';
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 64px;
+    color: $dark;
+
+    @include phone() {
+        font-size: 32px;
+        line-height: 45px;
+    }
+}
+
+h2 {
+    font-family: 'Jockey One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $secondary;
+
+    @include smallphone() {
+        font-size: 4.693611vw;
+        line-height: 5.47588vw;
+    }
+
+    @include padOnly() {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+h3 {
+    font-family: 'Jockey One';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 84px;
+    color: $dark;
+
+    @include smallphone() {
+        font-size: 15.645372vw;
+        line-height: 21.90352vw;
+    }
+
+    @include padOnly() {
+        font-size: 120px;
+        line-height: 168px;
+    }
+}
+
+h4 {
+    width: 100%;
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $primary;
+    text-align: center;
+
+    @include midphone() {
+        font-size: 4.172099vw;
+        line-height: 5.997392;
+    }
+
+    @include pad() {
+        font-size: 3.194444vw;
+        line-height: 4.652778vw;
+    }
+
+    @include pc() {
+        font-size: 46px;
+        line-height: 67px;
+    }
+
+    &::before {
+        content: "<h1>";
+        margin-right: 12px;
+        font-family: 'Jockey One';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $secondary;
+
+        @include smallphone() {
+            font-size: 4.172099vw;
+            line-height: 5.867014vw;
+        }
+    
+        @include pad() {
+            font-size: 3.194444vw;
+            line-height: 4.444444vw;
+        }
+
+        @include pc() {
+            font-size: 46px;
+            line-height: 64px;
+        }
+    }
+
+    &::after {
+        content: "<h1>";
+        margin-left: 12px;
+        font-family: 'Jockey One';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $secondary;
+
+        @include smallphone() {
+            font-size: 4.172099vw;
+            line-height: 5.867014vw;
+        }
+    
+        @include pad() {
+            font-size: 3.194444vw;
+            line-height: 4.444444vw;
+        }
+        
+        @include pc() {
+            font-size: 46px;
+            line-height: 64px;
+        }
+    }
+}
+
+h5 {
+    font-family: 'Cubic 11';
+    font-weight: 400;
+    font-size: 15.466667vw;
+    line-height: 26.666667vw;
+    color: $dark;
+
+    @include smallphone() {
+        font-size: 58px;
+        line-height: 100px;
+    }
+
+    > span {
+        display: block;
+        @include midphone() {
+            display: inline;
+        }
+        @include padOnly() {
+            display: block;
+        }
+        @include pad() {
+            display: inline;
+        }
+
+    }
+}

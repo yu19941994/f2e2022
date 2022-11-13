@@ -1,0 +1,253 @@
+.rule {
+    padding: 4px 16px 32px;
+    background-color: $light;
+
+    @include midphone() {
+        padding: 49px 34px 154px;
+    }
+    
+
+    @include pc() {
+        padding: 47px 160px 114px;
+    }
+
+    &__title {
+        padding: 12px 16px;
+        background-color: #F3CD46;
+
+        @include midphone() {
+            padding: 2.08605vw 10.430248vw;
+        }
+
+        @include pad() {
+            max-width: 808px;
+            margin-right: auto;
+            padding: 16px 80px;
+        }
+        > p {
+            font-family: 'Noto Sans TC';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: $dark;
+            letter-spacing: 0.64px;
+            @include midphone() {
+                font-size: 4.693611vw;
+                line-height: 6.779661vw;
+            }
+
+            @include pad() {
+                font-size: 2.777778vw;
+                line-height: 4.861111vw;
+            }
+
+            @include pc() {
+                font-size: 40px;
+                line-height: 70px;
+                text-align: right;
+            }
+        }
+    }
+
+    > ul > li:nth-of-type(1) {
+        @include midphone() {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            max-width: 79.139505vw;
+            margin-left: auto;
+        }
+        @include padOnly() {
+            margin-top: -10px;
+        }
+    }
+
+    > ul > li:nth-of-type(2) {
+        @include midphone() {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            max-width: 79.139505vw;
+            margin-right: auto;
+        }
+        @include padOnly() {
+            position: relative;
+            z-index: 7;
+            margin-top: -20px;
+        }
+    }
+
+    > ul > li > img {
+        width: 100%;
+    }
+
+    > ul > li > img:nth-of-type(1) {
+        @include smallphone() {
+            display: none;
+        }
+    }
+
+    > ul > li > img:nth-of-type(2) {
+        display: none;
+        @include smallphone() {
+            max-width: 607px;
+            display: block;
+        }
+        @include pad() {
+            display: none;
+        }
+    }
+
+    > ul > li > img:nth-of-type(3) {
+        display: none;
+        @include pad() {
+            max-width: 680px;
+            display: block;
+        }
+    }
+
+    > ul > li:nth-of-type(1) > div > .rule__text > p:nth-of-type(1),
+    > ul > li:nth-of-type(1) > div > .rule__text > h6 {
+        margin-bottom: 12px;
+
+        @include padOnly() {
+            margin-bottom: 16px;
+        }
+    }
+
+    > ul > li:nth-of-type(1) > div > .rule__text > p:nth-of-type(2) {
+        @include padOnly() {
+            margin-bottom: 16px;
+        }
+    }
+
+    > ul > li:nth-of-type(2) > div > .rule__text > p,
+    > ul > li:nth-of-type(2) > div > .rule__text > h6 {
+        margin-bottom: 12px;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0px 22px 14px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('https://st.depositphotos.com/2229436/2386/v/950/depositphotos_23860005-Seamless-texture-with-noise-effect-television-grainy-for-background.-Black-and-white-template-size-square-format.-.-TV-screen-no-signal.-This-image-is-a-bitmap-copy-my-vector-illustration.jpg');
+        mix-blend-mode: normal;
+        border: 1px solid #000;
+
+        @include midphone() {
+            max-width: 607px;
+            padding: 0px 40px 28px 72px;
+        }
+
+        @include pad() {
+            max-width: 680px;
+            padding: 0px 58px 32px 72px;
+        }
+
+    }
+
+    &__text {
+        position: absolute;
+        // left: 11px;
+        // left: 3.206997%;
+        left: calc((100% - 307px) * 0.30555556);
+        width: 307px;
+        padding: 24px 8px;
+        background-color: #fff;
+
+        @include padOnly() {
+            left: 50%;
+            width: 495px;
+            transform: translateX(-50%);
+        }
+
+        > h6 {
+            font-family: 'Noto Sans TC';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: $dark;
+            letter-spacing: 0.64px;
+
+            @include padOnly() {
+                font-size: 28px;
+                line-height: 41px;
+            }
+        }
+
+        > p {
+            font-family: 'Noto Sans TC';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: $dark;
+            letter-spacing: 0.64px;
+
+            @include padOnly() {
+                font-size: 16px;
+                line-height: 23px;
+            }
+            > span:nth-of-type(2) {
+                margin-right: 12px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: $primary;
+                @include padOnly() {
+                    font-size: 20px;
+                    line-height: 29px;
+                }
+            }
+        }
+
+        > span {
+            display: block;
+            font-family: 'Noto Sans TC';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(32, 31, 29, .5);
+            letter-spacing: 0.64px;
+            @include padOnly() {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    &__content--bgTop {
+        width: 299px;
+        height: 212px;
+        margin-left: 3.206997%;
+        margin-right: -3.206997%;
+        background-color: $dark;
+        @include padOnly() {
+            width: 495px;
+            height: 232px;
+        }
+    }
+
+    &__content--bgBottom {
+        width: 301px;
+        height: 234px;
+        margin-left: 3.206997%;
+        margin-right: -3.206997%;
+        background-color: $dark;
+        @include padOnly() {
+            width: 498px;
+            height: 261px;
+        }
+    }
+
+    &__content--dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-left: 12px;
+        margin-right: 4px;
+        border-radius: 999rem;
+        background-color: #F3CD46;
+    }
+}

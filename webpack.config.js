@@ -9,6 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: './js/[name].js',
+        assetModuleFilename: 'images/[name][ext]'
     },
     devServer: {
         // 讓壓縮變得快速
@@ -51,6 +52,7 @@ module.exports = {
             {
                 test: /\.(sass|scss)$/,
                 use:[MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+                // use:["style-loader", "css-loader", "sass-loader"]
             },
             {
                 test: /\.js$/,
@@ -72,6 +74,26 @@ module.exports = {
                     },
                     gifsicle: {
                         interlaced: false
+                    }
+                }
+            },
+            {
+                test: /\.(png|jpg|gif|jpeg|svg)$/i,
+                type: 'asset/resource',
+                parser: {
+                    dataurlCondition: {
+                        maxSize: 8192,
+                    }
+                },
+                // generator: {
+                //     filename: 'images/[hsah:10][ext]'
+                // },
+                parser: {
+                    dataurlCondition: {
+                        maxSize: 8192,
+                    },
+                    generator: {
+                        filename: 'images/[hsah:10][ext]'
                     }
                 }
             }

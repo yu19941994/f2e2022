@@ -1,0 +1,110 @@
+.intro {
+    padding: 0px 16px;
+    background-color: $light;
+
+    @include padOnly() {
+        padding: 0px 32px;
+    }
+
+    @include pc() {
+        padding: 0px 80px;
+    }
+
+    &__main {
+        padding: 80px 8px 172px;
+        background-color: $dark;
+        @include smallphone() {
+            padding: 160px 18px 190px;
+        }
+        @include padOnly() {
+            padding: 200px 55px 349px;
+        }
+
+        > h4 {
+            margin-bottom: 24px;
+
+            @include smallphone() {
+                margin-bottom: 90px;
+            }
+
+            @include padOnly() {
+                margin-bottom: 79.5px;
+            }
+        }
+    }
+
+    &__text {
+        color: $third;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include pc() {
+            flex-direction: row;
+        }
+
+    }
+
+    &__img {
+        margin-bottom: 48px;
+
+        @include pc() {
+            margin-bottom: 0;
+            margin-right: 18px;
+        }
+
+        > img {
+            width: 246px;
+            height: 140px;
+
+            @include midphone() {
+                width: 48.239896vw;
+                height: 27.640156vw;
+            }
+
+            @include padOnly() {
+                width: 370px;
+                height: 212px;
+            }
+        }
+    }
+
+    &__content--green {
+        width: 100%;
+        padding: 16px 0px;
+        text-align: center;
+        background-color: $third;
+
+        @include pc() {
+            padding: 16px;
+            text-align: left;
+        }
+
+        > p {
+            padding: 16px 0px;
+            font-family: 'Noto Sans TC';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #000;
+
+            @include midphone() {
+                font-size: 3.129074vw;
+                line-height: 4.563233vw;
+            }
+
+            @include pad() {
+                font-size: 2.222222vw;
+                line-height: 4.444444vw;
+            }
+
+            @include pc() {
+                font-size: 32px;
+                line-height: 64px;
+            }
+        }
+    }
+}
