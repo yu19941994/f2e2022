@@ -5,17 +5,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 36px);
+    width: 100%;
     padding: 16px;
     background-color: $light;
 
     @include smallphone() {
-        width: calc(100% - 52px);
         padding: 16px 32px;
-    }
-
-    @include padOnly() {
-        width: calc(100% - 32px);
     }
 
     &--input {

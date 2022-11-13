@@ -305,14 +305,11 @@
     &__img--textPad {
         position: absolute;
         top: 50%;
-        // bottom: 0px;
         left: 50%;
-        // right: 0px;
         display: none;
         width: 100%;
-        padding-right: 11.734029vw;
         text-align: right;
-        transform: translate(-50%, -50%);
+        transform: translate(-60%, -50%);
 
         @include smallphone() {
             display: block;
