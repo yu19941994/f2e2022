@@ -219,7 +219,6 @@
             padding-bottom: 29.856584vw;
         }
         @include padOnly() {
-            // margin-bottom: -66px;
             padding-bottom: calc(29.856584vw - 66px);
             overflow: hidden;
         }
