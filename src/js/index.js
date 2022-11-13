@@ -18,3 +18,6 @@ import '../images/level3.png';
 import '../images/register1.png';
 import '../images/register2.png';
 import '../images/register3.png';
+import '../images/footer1.png';
+import '../images/footer2.png';
+import '../images/footer3.png';
