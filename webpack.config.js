@@ -52,7 +52,6 @@ module.exports = {
             {
                 test: /\.(sass|scss)$/,
                 use:[MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-                // use:["style-loader", "css-loader", "sass-loader"]
             },
             {
                 test: /\.js$/,
@@ -85,9 +84,6 @@ module.exports = {
                         maxSize: 8192,
                     }
                 },
-                // generator: {
-                //     filename: 'images/[hsah:10][ext]'
-                // },
                 parser: {
                     dataurlCondition: {
                         maxSize: 8192,
@@ -95,6 +91,13 @@ module.exports = {
                     generator: {
                         filename: 'images/[hsah:10][ext]'
                     }
+                }
+            },
+            {
+                test: /\.(woff|woff2|ttf|eot)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]?[hash: 8]'
                 }
             }
         ],

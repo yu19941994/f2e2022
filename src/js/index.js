@@ -28,3 +28,7 @@ import '../images/footer2.png';
 import '../images/footer3.png';
 import '../images/rule_content.png';
 import '../images/vector.png';
+import '../fonts/JockeyOne-Regular.ttf';
+import '../fonts/Cubic_11_1.013_R.ttf';
+import '../fonts/Cubic_11_1.013_R.woff';
+import '../fonts/Cubic_11_1.013_R.woff2';

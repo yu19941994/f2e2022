@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Jockey One';
+    src: url('../fonts/JockeyOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cubic 11';
+    src: url('../fonts/Cubic_11_1.013_R.ttf') format('truetype'),
+    url('../fonts/Cubic_11_1.013_R.woff') format('woff'),
+    url('../fonts/Cubic_11_1.013_R.woff2') format('woff2');
+}
+
 h1 {
     font-family: 'Jockey One';
     font-weight: 400;
