@@ -60,7 +60,12 @@
             width: 246px;
             height: 140px;
 
-            @include smallphone() {
+            @include midphone() {
+                width: 48.239896vw;
+                height: 27.640156vw;
+            }
+
+            @include padOnly() {
                 width: 370px;
                 height: 212px;
             }
@@ -86,12 +91,17 @@
             line-height: 26px;
             color: #000;
 
-            @include smallphone() {
-                font-size: 24px;
-                line-height: 35px;
+            @include midphone() {
+                font-size: 3.129074vw;
+                line-height: 4.563233vw;
             }
 
-            @include padOnly() {
+            @include pad() {
+                font-size: 2.222222vw;
+                line-height: 4.444444vw;
+            }
+
+            @include pc() {
                 font-size: 32px;
                 line-height: 64px;
             }

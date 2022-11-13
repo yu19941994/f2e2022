@@ -56,12 +56,17 @@ h4 {
     color: $primary;
     text-align: center;
 
-    @include smallphone() {
-        font-size: 32px;
-        line-height: 46px;
+    @include midphone() {
+        font-size: 4.172099vw;
+        line-height: 5.997392;
     }
 
-    @include padOnly() {
+    @include pad() {
+        font-size: 3.194444vw;
+        line-height: 4.652778vw;
+    }
+
+    @include pc() {
         font-size: 46px;
         line-height: 67px;
     }
@@ -76,11 +81,16 @@ h4 {
         color: $secondary;
 
         @include smallphone() {
-            font-size: 32px;
-            line-height: 45px;
+            font-size: 4.172099vw;
+            line-height: 5.867014vw;
         }
     
-        @include padOnly() {
+        @include pad() {
+            font-size: 3.194444vw;
+            line-height: 4.444444vw;
+        }
+
+        @include pc() {
             font-size: 46px;
             line-height: 64px;
         }
@@ -96,11 +106,16 @@ h4 {
         color: $secondary;
 
         @include smallphone() {
-            font-size: 32px;
-            line-height: 45px;
+            font-size: 4.172099vw;
+            line-height: 5.867014vw;
         }
     
-        @include padOnly() {
+        @include pad() {
+            font-size: 3.194444vw;
+            line-height: 4.444444vw;
+        }
+        
+        @include pc() {
             font-size: 46px;
             line-height: 64px;
         }
