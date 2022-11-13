@@ -10,18 +10,12 @@
     &__main {
         position: relative;
         display: flex;
-        // justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: 0px 16px;
         padding: 23px 27px 22px 30px;
         border-radius: 32px 32px 0px 0px;
         background-color: $dark;
-
-        // @include smallphone() {
-        //     padding-left: 0px;
-        //     padding-right: 0px;
-        // }
 
         @include padOnly() {
             margin: 0px 32px;
@@ -65,7 +59,6 @@
 
     &__img--top {
         display: none;
-        // margin-bottom: 273px;
         @include smallphone() {
             display: flex;
             width: 100%;
@@ -161,7 +154,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        // width: 81.632653%;
         width: 280px;
 
         @include smallphone() {
@@ -219,7 +211,6 @@
     &__img--pad {
         display: none;
         @include smallphone() {
-            // position: absolute;
             position: relative;
             display: block;
             width: 53.976532%;
@@ -278,7 +269,6 @@
         }
         > p,
         > div > p {
-            // position: absolute;
             display: inline-block;
             padding: 8px 24px;
             font-family: 'Jockey One';
@@ -324,8 +314,6 @@
         }
 
         @include padOnly() {
-            // top: 70%;
-            // left: 62%;
             top: 80%;
             left: -10%;
             transform: translate(0%, 0%);
@@ -349,7 +337,6 @@
 
         > p,
         > div > p {
-            // position: absolute;
             display: inline-block;
             padding: 8px 24px;
             font-family: 'Jockey One';
@@ -418,7 +405,6 @@
 
         @include smallphone() {
             margin-right: -74.315515vw;
-            // margin-top: -9.126467vw;
         }
 
         > div {
@@ -427,7 +413,6 @@
 
         > p,
         > div > p {
-            // position: absolute;
             display: inline-block;
             padding: 8px 24px;
             font-family: 'Jockey One';
@@ -484,9 +469,7 @@
         display: none;
         width: 61.277705vw;
         height: 6.518905vw;
-        // margin-top: -9.126467vw;
         margin-top: -15.645372vw;
-        // margin-bottom: 20vw;
         margin-right: -117.340287vw;
         background-color: $light;
         @include smallphone() {
@@ -499,11 +482,9 @@
 
     &__area--greenY {
         display: none;
-        // width: 6.518905vw;
         width: 22.8161617vw;
         height: 35.59322vw;
         margin-left: calc(-100% - 150px);
-        // margin-left: -10px;
         background-color: $third;
         @include smallphone() {
             display: block;
@@ -519,11 +500,9 @@
 
     &__area--greenX {
         display: none;
-        // width: 6.518905vw;
         width: 39.113529vw;
         height: 6.518905vw;
         margin-left: calc(-120%);
-        // margin-left: -10px;
         background-color: $third;
 
         @include smallphone() {

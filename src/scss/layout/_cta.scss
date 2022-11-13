@@ -17,8 +17,7 @@
     }
 
     &__text {
-        // padding: 0px 10px;
-        // border: 1px solid $dark;
+
         > p {
             padding: 0px 10px;
             border: 1px solid $dark;
@@ -52,7 +51,6 @@
     > div:nth-of-type(2) {
         @include midphone() {
             position: relative;
-            // width: 86px;
             height: 57.496741vw;
             margin-top: 90px;
         }
@@ -82,7 +80,6 @@
     > div:nth-of-type(4) {
         @include midphone() {
             position: relative;
-            // width: 86px;
             height: 57.496741vw;
             margin-top: calc(-57.496741vw - 69px);
         }
@@ -108,12 +105,6 @@
             @include padOnly() {
                 width: 32.569444vw;
             }
-        }
-    }
-
-    > div:nth-of-type(5) {
-        @include smallphone() {
-            // margin-top: calc(-57.496741vw - 69px);
         }
     }
 

@@ -79,7 +79,9 @@
             display: flex;
         }
 
-        > a {
+        > a,
+        > a:link,
+        > a:visited {
             font-family: 'Noto Sans TC';
             font-weight: 500;
             font-size: 24px;
@@ -97,7 +99,8 @@
             }
         }
 
-        > a:hover {
+        > a:hover,
+        > a:active {
             @include phone() {
                 background-color: $dark;
                 color: $light;
