@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Jockey One User';
+    font-family: 'Jockey One';
     src: url('../fonts/JockeyOne-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Cubic 11 User';
+    font-family: 'Cubic 11';
     src: url('../fonts/Cubic_11_1.013_R.ttf') format('truetype'),
     url('../fonts/Cubic_11_1.013_R.woff') format('woff'),
     url('../fonts/Cubic_11_1.013_R.woff2') format('woff2');
 }
 
 h1 {
-    font-family: 'Jockey One User';
+    font-family: 'Jockey One';
     font-weight: 400;
     font-size: 46px;
     line-height: 64px;
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Jockey One User';
+    font-family: 'Jockey One';
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Jockey One User';
+    font-family: 'Jockey One';
     font-weight: 400;
     font-size: 60px;
     line-height: 84px;
@@ -86,7 +86,7 @@ h4 {
     &::before {
         content: "<h1>";
         margin-right: 12px;
-        font-family: 'Jockey One User';
+        font-family: 'Jockey One';
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
@@ -111,7 +111,7 @@ h4 {
     &::after {
         content: "<h1>";
         margin-left: 12px;
-        font-family: 'Jockey One User';
+        font-family: 'Jockey One';
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
@@ -135,7 +135,7 @@ h4 {
 }
 
 h5 {
-    font-family: 'Cubic 11 User';
+    font-family: 'Cubic 11';
     font-weight: 400;
     font-size: 15.466667vw;
     line-height: 26.666667vw;
