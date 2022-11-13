@@ -10,10 +10,11 @@
     <title>F2E視差滾動</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="short icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
 </head>
 <body>
     <input type="checkbox" id="menu-control" class="navbar--input">
-    <header class="navbar">
+    <header class="navbar" id="navbar">
         <h1>The F2E</h1>
         <label class="navbar__button" for="menu-control">
             <span></span>
@@ -27,16 +28,16 @@
             <a href="#footer">立即報名</a>
         </nav>
     </header>
-    <section class="banner">
+    <section class="banner" id="banner">
         <div class="banner__main">
-            <div class="banner__longtext--top">
+            <div class="banner__longtext--top" data-aos>
                 <div>
                     <p>-UI Design -UI Design -UI Design</p>
                     <div class="banner__box--right"></div>
                 </div>
                 <p>-UI Design  -UI Design  -UI Design  -UI Design</p>
             </div>
-            <div class="banner__img--top">
+            <div class="banner__img--top" data-aos>
                 <div>
                     <img src="./images/blue_dialogue.png" alt="blue dialogue">
                     <div class="banner__img--textBlue">
@@ -49,10 +50,10 @@
                     <img src="./images/green_dialogue.png" alt="green dialogue">
                 </div>
             </div>
-            <img src="./images/triangle.png" alt="triangle">
-            <div class="banner__area--greenY"></div>
-            <div class="banner__area--greenX"></div>
-            <div class="banner__img">
+            <img src="./images/triangle.png" alt="triangle" data-aos>
+            <div class="banner__area--greenY" data-aos></div>
+            <div class="banner__area--greenX" data-aos></div>
+            <div class="banner__img" data-aos>
                 <h2>{<span class="banner__title">"2022"</span>}</h2>
                 <img src="./images/pink_dialogue.png" alt="pink dialogue">
                 <div class="banner__img--pad">
@@ -66,33 +67,33 @@
                     <h3>The F2E</h3>
                     <p>{ 4th };</p>
                 </div>
-                <h2>{<span class="banner__title">"互動式網頁設計"</span>}</h2>
+                <h2 data-aos>{<span class="banner__title">"互動式網頁設計"</span>}</h2>
             </div>
-            <div class="banner__longtext--pad">
+            <div class="banner__longtext--pad" data-aos>
                 <div>
                     <p>-UI Design -UI Design -UI Design</p>
                     <div class="banner__box--right"></div>
                 </div>
                 <p>-UI Design -UI Design -UI Design -UI Design</p>
             </div>
-            <div class="banner__img--bottom">
-                <img src="./images/blue_dialogue_l.png" alt="blue dialogue long">
+            <div class="banner__img--bottom" data-aos>
+                <img src="./images/blue_dialogue_l.png" alt="blue dialogue long" data-aos>
             </div>
-            <div class="banner__box--light"></div>
-            <div class="banner__longtext--bottom">
+            <div class="banner__box--light" data-aos></div>
+            <div class="banner__longtext--bottom" data-aos>
                 <div>
                     <div class="banner__box--left"></div>
                     <p>-Frontend-  Frontend-  Frontend-</p>
                 </div>
                 <p>-Frontend-  Frontend-  Frontend-  Frontend-</p>
             </div>
-            <img src="./images/triangle.png" alt="triangle">
+            <img src="./images/triangle.png" alt="triangle" data-aos>
         </div>
     </section>
     <section class="intro" id="intro">
         <div class="intro__main">
-            <h4>"<span class="intro__text">你是否也有以下困擾？</span>"</h4>
-            <div class="intro__content">
+            <h4 data-aos="fade-up" data-aos-anchor-placement="top-bottom">"<span class="intro__text">你是否也有以下困擾？</span>"</h4>
+            <div class="intro__content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="intro__img">
                     <img src="./images/icons_twins.png" alt="icons twins">
                 </div>
@@ -104,7 +105,7 @@
             </div>
         </div>
     </section>
-    <section class="cta">
+    <section class="cta" id="cta">
         <div class="cta__text">
             <p>
                 -UI Design -Frontend -UI Design -Frontend -UI Design
@@ -136,8 +137,8 @@
             </p>
         </div>
     </section>
-    <section class="description">
-        <div class="description__img--pink">
+    <section class="description" id="description">
+        <div class="description__img--pink" data-aos="fade-right">
             <img src="./images/pink_dialogue.png" alt="pink dialogue">
             <p>
                 {"
@@ -145,7 +146,7 @@
                 "}
             </p>
         </div>
-        <div class="description__img--pinkPad">
+        <div class="description__img--pinkPad" data-aos="fade-right">
             <img src="./images/pink_dialogue_l.png" alt="pink dialogue_l">
             <p>
                 {"
@@ -153,20 +154,20 @@
                 "}
             </p>
         </div>
-        <div class="description__img--blue">
+        <div class="description__img--blue" data-aos="fade-right">
             <img src="./images/blue_dialogue_l.png" alt="blue dialogue">
             <div>
                 <span></span><span></span><span></span>
                 <p>各路廠商強強聯手<span></span>共同設計出接地氣的網頁互動挑戰關卡</p>
             </div>
         </div>
-        <div class="description__img--iconsTwins">
+        <div class="description__img--iconsTwins" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <img src="./images/icons_twins.png" alt="icon twins">
         </div>
     </section>
-    <section class="level">
+    <section class="level" id="level">
         <ul>
-            <li>
+            <li data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <img src="./images/bar_s.png" alt="bar">
                 <img src="./images/bar_m.png" alt="bar">
                 <img src="./images/bar_l.png" alt="bar">
@@ -182,7 +183,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <img src="./images/bar_s.png" alt="bar">
                 <img src="./images/bar_m.png" alt="bar">
                 <img src="./images/bar_l.png" alt="bar">
@@ -198,7 +199,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <img src="./images/bar_s.png" alt="bar">
                 <img src="./images/bar_m.png" alt="bar">
                 <img src="./images/bar_l.png" alt="bar">
@@ -218,7 +219,7 @@
     </section>
     <section class="register" id="register">
         <ul>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="100">
                 <img src="./images/bar_s.png" alt="bar">
                 <img src="./images/bar_m.png" alt="bar">
                 <img src="./images/bar_l.png" alt="bar">
@@ -242,7 +243,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="200">
                 <img src="./images/bar_s.png" alt="bar">
                 <img src="./images/bar_m.png" alt="bar">
                 <img src="./images/bar_l.png" alt="bar">
@@ -268,7 +269,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="300">
                 <img src="./images/bar_s.png" alt="bar">
                 <img src="./images/bar_m.png" alt="bar">
                 <img src="./images/bar_l.png" alt="bar">
@@ -340,13 +341,13 @@
             </li>
         </ul>
     </section>
-    <section class="rule">
-        <div class="rule__title">
+    <section class="rule" id="rule">
+        <div class="rule__title" data-aos="fade-right">
             <p>區區修煉已經無法滿足了嗎？</p>
             <p>還有比賽等著你！</p>
         </div>
         <ul>
-            <li>
+            <li data-aos="fade-left">
                 <img src="./images/ruleBar_s.png" alt="rule bar">
                 <img src="./images/ruleBar_m.png" alt="rule bar">
                 <img src="./images/ruleBar_l.png" alt="rule bar">
@@ -359,7 +360,7 @@
                     <div class="rule__content--bgTop"></div>
                 </div>
             </li>
-            <li>
+            <li data-aos="fade-right">
                 <img src="./images/ruleBar_s.png" alt="rule bar">
                 <img src="./images/ruleBar_m.png" alt="rule bar">
                 <img src="./images/ruleBar_l.png" alt="rule bar">
@@ -376,6 +377,10 @@
             </li>
         </ul>
     </section>
+    <a href="#register" class="register__button" id="registerBtn" data-aos="fade-up">
+        立即報名
+        <img src="./images/vector.png" alt="vector">
+    </a>
     <footer class="footer" id="footer">
         <h6>贊助單位</h6>
         <ul class="footer__logo">
@@ -391,5 +396,12 @@
         </ul>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
 </body>
 </html>

@@ -114,18 +114,19 @@
     }
 
     &__title {
-        max-width: 130px;
+        max-width: 139px;
         margin: 0px auto 18px;
         padding: 12px 16px;
         background-color: $third;
 
         @include midphone() {
-            max-width: 183px;
+            max-width: 26.859192vw;
             margin: 0px auto 6.258149vw -16px;
             padding: 16px 24px;
         }
 
         @include pad() {
+            max-width: none;
             height: 6.944444vw;
             margin: 0px 48px 0px 0px;
         }
@@ -427,6 +428,57 @@
 
         &--img {
             max-width: 300px;
+        }
+    }
+
+    &__button {
+        position: fixed;
+        display: none;
+        width: 100%;
+        bottom: 0;
+        padding-top: 16px;
+        padding-bottom: 33.35px;
+        font-family: 'Noto Sans TC';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        color: $dark;
+        letter-spacing: 0.64px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $third;
+
+        @include midphone() {
+            right: 10.430248vw;
+            width: 35.723598vw;
+            padding: 2.08605vw 4.954368vw 5.395046vw;
+            font-size: 6.258149vw;
+            line-height: 9.126467vw;
+        }
+
+        @include padOnly() {
+            right: 80px;
+            width: 274px;
+            padding: 16px 38px 41.38px;
+            font-size: 48px;
+            line-height: 70px;
+        }
+
+        @include pad() {
+            right: 9.166667vw;
+        }
+
+        @include pc() {
+            right: 132px;
+        }
+
+        > img {
+            width: 16.12px;
+            margin: 11.94px auto 0;
+
+            @include padOnly() {
+                width: 24.18px;
+            }
         }
     }
 }

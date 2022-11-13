@@ -272,6 +272,7 @@
 
     &__longtext--top {
         margin-bottom: 24px;
+        // animation: 0.5s 0.2s ease 1 normal forwards;
 
         > div {
             display: flex;
@@ -338,6 +339,7 @@
 
     &__longtext--pad {
         display: none;
+        // animation: 0.5s 0.2s ease 1 normal forwards;
 
         @include smallphone() {
             margin-left: -80.83442vw;
@@ -519,12 +521,11 @@
 
     &__area--greenX {
         display: none;
-        // width: 6.518905vw;
         width: 39.113529vw;
         height: 6.518905vw;
         margin-left: calc(-120%);
-        // margin-left: -10px;
         background-color: $third;
+        // animation: 0.5s 0.2s ease 1 normal forwards;
 
         @include smallphone() {
             display: block;
@@ -538,3 +539,23 @@
         }
     }
 }
+
+// @keyframes leave {
+//     0% {
+//         transform: translate(0px, 0px)
+//     }
+
+//     100% {
+//         transform: translate(-500px, 200px)
+//     }
+// }
+
+// @keyframes back {
+//     100% {
+//         transform: translate(0px, 0px)
+//     }
+
+//     0% {
+//         transform: translate(-500px, 200px)
+//     }
+// }

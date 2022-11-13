@@ -1,5 +1,7 @@
 import '../css/index.css';
 import '../scss/all.scss';
+import './all';
+import './banner';
 import '../index.html';
 import "@babel/polyfill";
 import '../images/pink_dialogue.png';
@@ -25,3 +27,4 @@ import '../images/footer1.png';
 import '../images/footer2.png';
 import '../images/footer3.png';
 import '../images/rule_content.png';
+import '../images/vector.png';
