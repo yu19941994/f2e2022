@@ -15,3 +15,6 @@ import '../images/bar_s.png';
 import '../images/level1.png';
 import '../images/level2.png';
 import '../images/level3.png';
+import '../images/register1.png';
+import '../images/register2.png';
+import '../images/register3.png';
