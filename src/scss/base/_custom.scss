@@ -11,8 +11,9 @@ img {
 a {
     cursor: pointer;
 }
-
+@import url(//fonts.googleapis.com/css?family=Jockey+One);
 html,
 body {
+    font-family: 'Jockey One, Cubic_11_1.013_R';
     overflow-x: hidden;
 }
