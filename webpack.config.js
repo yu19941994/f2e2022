@@ -77,7 +77,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|jpg|gif|jpeg|svg)$/i,
+                test: /\.(png|jpg|gif|jpeg|svg|ttf|woff|woff2)$/i,
                 type: 'asset/resource',
                 parser: {
                     dataurlCondition: {
@@ -91,13 +91,6 @@ module.exports = {
                     generator: {
                         filename: 'images/[hsah:10][ext]'
                     }
-                }
-            },
-            {
-                test: /\.(woff|woff2|ttf|eot)$/,
-                loader: 'file-loader',
-                options: {
-                    name: '[path][name].[ext]?[hash: 8]'
                 }
             }
         ],
