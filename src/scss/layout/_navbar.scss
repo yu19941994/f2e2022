@@ -40,21 +40,21 @@
         > span:nth-child(1) {
             top: 0px;
             transform: rotate(0deg);
-            transition: top 1s 1s, transform 1s;
+            transition: top .3s .3s, transform .3s;
         }
         
         > span:nth-child(2) {
             top: 0;
             bottom: 0;
-            transition: 1s;
-            opacity: 1;
-            transform: 1s 2s;
+            transition: .3s;
+            opacity: .3;
+            transform: .3s .6s;
         }
         
         > span:nth-child(3) {
             bottom: 0px;
             transform: rotate(0deg);
-            transition: bottom 1s 1s, transform 1s;
+            transition: bottom .3s .3s, transform .3s;
         }
 
 
